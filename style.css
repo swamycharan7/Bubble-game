@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(229, 174, 220);
+}
+
+#panel {
+    overflow: hidden;
+    border-radius: 15px;
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+}
+
+#ptop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color:  rgb(149, 181, 107);
+}
+
+.elem {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 15%;
+    font-size: 30px;
+}
+
+.box {
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+#pbtm {
+    height: calc(100% - 100px);
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(107, 145, 181);
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: rgb(174, 229, 178);
+}
+
+/* Adjustments for responsive layout */
+@media only screen and (max-width: 600px) {
+    .elem {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .box {
+        height: 30px;
+        width: 40px;
+        padding: 20px;
+    }
+
+    .bubble {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .elem {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .box {
+        height: 25px;
+        width: 35px;
+        padding: 15px;
+    }
+
+    .bubble {
+        height: 30px;
+        width: 30px;
+    }
+}
